@@ -6,10 +6,10 @@ import Image from "next/image";
 
 export default function Footer(){
     return(
-    <footer className=' lg:w-full w-full lg:h-full justify-around pt-60'>
+    <footer className=' lg:w-full w-full lg:h-full justify-around pt-36'>
      <div className='flex items-center'>
           <div className=''>
-          <Image
+               <Image
                  src={"/images/pngegg.png"}
                  alt="Logo"
                  width={150}
@@ -19,7 +19,14 @@ export default function Footer(){
                <p className='text-center'>Comprar</p>
           </div>
           <div>
-          <Image
+               <Image
+                 src={"/switch-icon.svg"}
+                 alt="Logo"
+                 width={150}
+                 height={19}
+                 className="px-16 mt-11 ml-2 absolute" 
+               />
+               <Image
                  src={"/images/pngegg.png"}
                  alt="Logo"
                  width={150}
@@ -29,7 +36,14 @@ export default function Footer(){
                <p className='text-center'>Cambiar</p>
           </div>
           <div>
-          <Image
+               <Image
+                 src={"/close-round-icon.svg"}
+                 alt="Logo"
+                 width={150}
+                 height={19}
+                 className="px-16 mt-11 ml-2 absolute" 
+               />
+               <Image
                  src={"/images/pngegg.png"}
                  alt="Logo"
                  width={150}
@@ -37,7 +51,6 @@ export default function Footer(){
                  className="px-6" 
                />
                <p className='text-center'>Anular</p>
-
           </div>
                
                
