@@ -7,17 +7,25 @@ import Menu from '../pages/menu';
 
 
 
-const Card: React.FC = ()=>{
+const Landing: React.FC = ()=>{
     
     const router = useRouter();
+    const redirectToComprar = () => {
+        router.push('/comprar')
+    }
     const [menuOpen, setMenuOpen] = useState<boolean>(false)
     const menu = () => {
         setMenuOpen(!menuOpen)
     }
+    const closeMenu = () => {
+        if(menuOpen){
+            menu()
+        }
+    }
 
 
     return(
-        <div className=''>
+        <div className='' onClick={closeMenu}>
               <div className="mt-10 flex px-12">
                 <div className="mt-9" onClick={menu}>
                 <Image
@@ -95,7 +103,7 @@ const Card: React.FC = ()=>{
                         <input type="text" className="rounded-md pl-8 h-10 mx-12 w-72"
                             placeholder="Opcional" />
                         </div>
-                        <button className="bg-orange-600 mt-4 mx-12 px-20 rounded-md h-10 w-72">
+                        <button className="bg-orange-600 mt-4 mx-12 px-20 rounded-md h-10 w-72" onClick={redirectToComprar}>
                             <p>BUSCAR</p>
                         </button>
                     </div>
@@ -104,4 +112,4 @@ const Card: React.FC = ()=>{
     )
 }
 
-export default Card;
+export default Landing;
