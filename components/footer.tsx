@@ -1,14 +1,30 @@
+"use client"
 import React from 'react';
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 
 
+
 export default function Footer(){
+
+     const router = useRouter();
+
+     const redirectToComprar = () => {
+          router.push('/comprar')
+      }
+      const redirectToCambiar = () => {
+          router.push('/cambiar')
+      }
+      const redirectToAnular = () => {
+          router.push('/anular')
+      }
+
+
     return(
     <footer className=' lg:w-full w-full lg:h-full justify-around pt-36'>
      <div className='flex items-center'>
-          <div className=''>
+          <div onClick={redirectToComprar} className='cursor-pointer'>
                <Image
                  src={"/images/pngegg.png"}
                  alt="Logo"
@@ -18,7 +34,7 @@ export default function Footer(){
                />
                <p className='text-center'>Comprar</p>
           </div>
-          <div>
+          <div onClick={redirectToCambiar} className='cursor-pointer'>
                <Image
                  src={"/switch-icon.svg"}
                  alt="Logo"
@@ -35,7 +51,7 @@ export default function Footer(){
                />
                <p className='text-center'>Cambiar</p>
           </div>
-          <div>
+          <div onClick={redirectToAnular} className='cursor-pointer'>
                <Image
                  src={"/close-round-icon.svg"}
                  alt="Logo"
