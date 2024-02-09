@@ -29,7 +29,7 @@ const Menu: React.FC<MenuProps> = ({ menuOpen, menu }) => {
             <h2 className="text-gray-400 text-lg mt-8">¡Hola!</h2>
 
             </div>
-          <ul className="text-gray-400 mt-4">
+          <ul className="text-gray-400 mt-4 ml-4">
                 <Image
                     src={"/images/smartphone.png"}
                     alt="Logo"
