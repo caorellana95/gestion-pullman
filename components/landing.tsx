@@ -35,7 +35,7 @@ const Landing: React.FC = ()=>{
                     height={9}
                 />
                 </div>
-                <div className="">
+                <div className=" sm:mx-48">
                 <Image
                     src={"/images/pullman.png"}
                     alt="Logo"
@@ -45,8 +45,8 @@ const Landing: React.FC = ()=>{
                 </div>
               </div>
               <Menu menuOpen={menuOpen} menu={menu} /> 
-              <div className="">
-                <div className=" bg-blue-600 justify-around  py-4 h-[450px] mx-6 text-white rounded-md">
+              <div className="sm:mt-12">
+                <div className=" bg-blue-600 justify-around sm:mx-96 py-4 h-[450px] mx-6 text-white rounded-md">
                     <h1 className="text-xl px-12">¿Dónde estás?</h1>
                         <div className="w-12 mb-12">
                             <div className="rounded-md h-10 mx-12 w-72 bg-white h-24">
