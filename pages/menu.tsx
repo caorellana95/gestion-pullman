@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 interface MenuProps {
     menuOpen: boolean;
-  menu: () => void;
+    menu: () => void;
 }
 
 const Menu: React.FC<MenuProps> = ({ menuOpen, menu }) => {
@@ -26,10 +26,9 @@ const Menu: React.FC<MenuProps> = ({ menuOpen, menu }) => {
                   height={19}
                   className=" mt-2 "
                  />
-            <h2 className="text-gray-400 text-lg mt-8">¡Hola!</h2>
-
+              <h2 className="text-gray-400 text-lg mt-8">¡Hola!</h2>
             </div>
-          <ul className="text-gray-400 mt-4 ml-4">
+            <ul className="text-gray-400 mt-4 ml-4">
                 <Image
                   src={"/images/smartphone.png"}
                   alt="Logo"
@@ -39,42 +38,42 @@ const Menu: React.FC<MenuProps> = ({ menuOpen, menu }) => {
                  />
             <li className="mb-4 ml-8">Recargar PullmanPay</li>
                 <Image
-                   src={"/images/smartphone.png"}
-                   alt="Logo"
-                   width={35}
-                   height={19}
-                   className=" mr-2 absolute"
+                  src={"/images/smartphone.png"}
+                  alt="Logo"
+                  width={35}
+                  height={19}
+                  className=" mr-2 absolute"
                  />
                 <Image
-                   src={"/images/exchange lr.png"}
-                   alt="Logo"
-                   width={12}
-                   height={19}
-                   className=" ml-3 mt-3 absolute"
+                  src={"/images/exchange lr.png"}
+                  alt="Logo"
+                  width={12}
+                  height={19}
+                  className=" ml-3 mt-3 absolute"
                  />
             <li className="mb-4 ml-8">Compartir Saldo</li>
                 <Image
-                   src={"/images/profile.png"}
-                   alt="Logo"
-                   width={20}
-                   height={19}
-                   className=" ml-2 mt-1 absolute"
+                  src={"/images/profile.png"}
+                  alt="Logo"
+                  width={20}
+                  height={19}
+                  className=" ml-2 mt-1 absolute"
                  />
             <li className="mb-4 ml-8">Mi cuenta</li>
                 <Image
-                   src={"/images/boleto.png"}
-                   alt="Logo"
-                   width={25}
-                   height={19}
-                   className=" mr-2 ml-1 absolute"
+                  src={"/images/boleto.png"}
+                  alt="Logo"
+                  width={25}
+                  height={19}
+                  className=" mr-2 ml-1 absolute"
                  />
             <li className="mb-4 ml-8">Mis viajes</li>
                 <Image
-                   src={"/images/statistics.png"}
-                   alt="Logo"
-                   width={30}
-                   height={19}
-                   className=" mr-2 absolute"
+                  src={"/images/statistics.png"}
+                  alt="Logo"
+                  width={30}
+                  height={19}
+                  className=" mr-2 absolute"
                  />
             <li className="mb-4 ml-8">Mis movimientos</li>
                 <Image
